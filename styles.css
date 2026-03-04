@@ -4,48 +4,255 @@
     --bg: #f4f7f9;
 }
 
-body { font-family: 'Inter', sans-serif; margin: 0; background-color: var(--bg); color: #333; line-height: 1.6; }
+body { 
+    font-family: 'Inter', sans-serif; 
+    margin: 0; 
+    background-color: var(--bg); 
+    color: #333; 
+    line-height: 1.6; 
+}
 
-.navbar { background: var(--primary); padding: 15px 8%; display: flex; justify-content: space-between; align-items: center; color: white; position: sticky; top: 0; z-index: 1000; }
-.logo span { color: var(--accent); }
-.nav-links { list-style: none; display: flex; gap: 20px; }
-.nav-links a { color: white; text-decoration: none; font-weight: 600; }
+/* Barra de Navegación */
+.navbar { 
+    background: var(--primary); 
+    padding: 15px 8%; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    color: white; 
+    position: sticky; 
+    top: 0; 
+    z-index: 1000; 
+}
 
-.hero { background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80') center/cover; height: 350px; display: flex; align-items: center; justify-content: center; color: white; text-align: center; }
-.btn-main { background: var(--accent); color: white; padding: 12px 25px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+.logo span { 
+    color: var(--accent); 
+}
 
-.container { padding: 40px 8%; }
-.section-title { text-align: center; margin-bottom: 30px; color: var(--primary); }
-.grid-modulos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 25px; }
+.nav-links { 
+    list-style: none; 
+    display: flex; 
+    gap: 20px; 
+}
 
-.card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s; }
-.card:hover { transform: translateY(-10px); }
-.card-img { height: 160px; background-size: cover; background-position: center; background-color: #eee; }
+.nav-links a { 
+    color: white; 
+    text-decoration: none; 
+    font-weight: 600; 
+}
 
-.m1 { background-image: url('https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=400&q=60'); }
-.m2 { background-image: url('https://images.unsplash.com/photo-1494412574743-019460182a5d?auto=format&fit=crop&w=400&q=60'); }
-.m3 { background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=400&q=60'); }
-.m6 { background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=60'); }
+/* Sección Hero (Banner principal) */
+.hero { 
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1200&q=80') center/cover; 
+    height: 350px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: white; 
+    text-align: center; 
+}
 
-.card-body { padding: 20px; }
-.tag { background: #e0f2fe; color: var(--accent); padding: 4px 10px; font-size: 11px; font-weight: bold; border-radius: 4px; text-transform: uppercase; }
-.btn-open { margin-top: 15px; width: 100%; padding: 10px; border: 2px solid var(--accent); color: var(--accent); background: none; font-weight: bold; cursor: pointer; border-radius: 5px; transition: 0.3s; }
-.btn-open:hover { background: var(--accent); color: white; }
+.btn-main { 
+    background: var(--accent); 
+    color: white; 
+    padding: 12px 25px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: bold; 
+}
 
-.modal { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.85); z-index: 2000; overflow-y: auto; }
-.modal-content { background: white; width: 90%; max-width: 700px; margin: 50px auto; padding: 30px; border-radius: 15px; position: relative; }
-.close-btn { position: absolute; right: 20px; top: 10px; font-size: 35px; cursor: pointer; color: #666; }
-.modal-title { border-bottom: 4px solid var(--accent); display: inline-block; margin-bottom: 20px; color: var(--primary); }
+/* Contenedor de Módulos */
+.container { 
+    padding: 40px 8%; 
+}
 
-.download-box { display: flex; gap: 10px; margin: 20px 0; flex-wrap: wrap; }
-.btn-dl { flex: 1; min-width: 200px; padding: 12px; background: #f0f0f0; text-align: center; text-decoration: none; color: #333; border-radius: 6px; font-weight: bold; transition: 0.3s; }
-.btn-dl.pdf { background: #e63946; color: white; }
+.section-title { 
+    text-align: center; 
+    margin-bottom: 30px; 
+    color: var(--primary); 
+}
 
-.data-table { width: 100%; border-collapse: collapse; margin: 20px 0; }
-.data-table th, .data-table td { border: 1px solid #ddd; padding: 12px; text-align: left; }
-.data-table th { background: var(--primary); color: white; }
+.grid-modulos { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+    gap: 25px; 
+}
 
-.video-frame { position: relative; padding-bottom: 56.25%; height: 0; margin-top: 25px; border-radius: 10px; overflow: hidden; }
-.video-frame iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+/* Tarjetas */
+.card { 
+    background: white; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+    transition: 0.3s; 
+}
 
-footer { background: var(--primary); color: white; text-align: center; padding: 30px; margin-top: 50px; }
+.card:hover { 
+    transform: translateY(-10px); 
+}
+
+.card-img { 
+    height: 160px; 
+    background-size: cover; 
+    background-position: center; 
+    background-color: #eee; 
+}
+
+/* Imágenes de las Tarjetas (Actualizadas con tus archivos locales) */
+.m1 { 
+    background-image: url('modulo1.png'); 
+}
+
+.m2 { 
+    background-image: url('modulo2.png'); 
+}
+
+.m3 { 
+    background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=400&q=60'); 
+}
+
+.m6 { 
+    background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=60'); 
+}
+
+.card-body { 
+    padding: 20px; 
+}
+
+.tag { 
+    background: #e0f2fe; 
+    color: var(--accent); 
+    padding: 4px 10px; 
+    font-size: 11px; 
+    font-weight: bold; 
+    border-radius: 4px; 
+    text-transform: uppercase; 
+}
+
+.btn-open { 
+    margin-top: 15px; 
+    width: 100%; 
+    padding: 10px; 
+    border: 2px solid var(--accent); 
+    color: var(--accent); 
+    background: none; 
+    font-weight: bold; 
+    cursor: pointer; 
+    border-radius: 5px; 
+    transition: 0.3s; 
+}
+
+.btn-open:hover { 
+    background: var(--accent); 
+    color: white; 
+}
+
+/* Ventanas Emergentes (Modales) */
+.modal { 
+    display: none; 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0,0,0,0.85); 
+    z-index: 2000; 
+    overflow-y: auto; 
+}
+
+.modal-content { 
+    background: white; 
+    width: 90%; 
+    max-width: 700px; 
+    margin: 50px auto; 
+    padding: 30px; 
+    border-radius: 15px; 
+    position: relative; 
+}
+
+.close-btn { 
+    position: absolute; 
+    right: 20px; 
+    top: 10px; 
+    font-size: 35px; 
+    cursor: pointer; 
+    color: #666; 
+}
+
+.modal-title { 
+    border-bottom: 4px solid var(--accent); 
+    display: inline-block; 
+    margin-bottom: 20px; 
+    color: var(--primary); 
+}
+
+/* Botones de descarga y enlaces */
+.download-box { 
+    display: flex; 
+    gap: 10px; 
+    margin: 20px 0; 
+    flex-wrap: wrap; 
+}
+
+.btn-dl { 
+    flex: 1; 
+    min-width: 200px; 
+    padding: 12px; 
+    background: #f0f0f0; 
+    text-align: center; 
+    text-decoration: none; 
+    color: #333; 
+    border-radius: 6px; 
+    font-weight: bold; 
+    transition: 0.3s; 
+}
+
+.btn-dl.pdf { 
+    background: #e63946; 
+    color: white; 
+}
+
+/* Tablas de datos */
+.data-table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 20px 0; 
+}
+
+.data-table th, .data-table td { 
+    border: 1px solid #ddd; 
+    padding: 12px; 
+    text-align: left; 
+}
+
+.data-table th { 
+    background: var(--primary); 
+    color: white; 
+}
+
+/* Ajuste de Video Responsivo */
+.video-frame { 
+    position: relative; 
+    padding-bottom: 56.25%; 
+    height: 0; 
+    margin-top: 25px; 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+.video-frame iframe { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+
+/* Pie de página */
+footer { 
+    background: var(--primary); 
+    color: white; 
+    text-align: center; 
+    padding: 30px; 
+    margin-top: 50px; 
+}
