@@ -27,7 +27,7 @@ body { font-family: 'Inter', sans-serif; margin: 0; background-color: var(--bg);
 .m2 { background-image: url('modulo2.png'); }
 .m3 { background-image: url('https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=400&q=60'); }
 /* Imagen para Módulo 4: He puesto una de contenedores de Unsplash, puedes cambiarla por una local */
-.m4 { background-image: url('https://images.unsplash.com/photo-1512411993213-33923985f543?auto=format&fit=crop&w=400&q=60'); }
+.m4 { background-image: url('modulo4.png'); }
 .m6 { background-image: url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=60'); }
 
 .card-body { padding: 20px; }
